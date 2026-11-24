@@ -2028,13 +2028,19 @@ export {
   validateTelemetryConfig,
   resolveOpenTelemetryConfig,
   DatadogHttpTelemetryExporter,
+  traceContractCall,
+  createOtelApiExporter,
+  createOtelApiExporterFromProviders,
+  OtelApiTelemetryExporter,
 } from "./performance/telemetry";
 export type {
   TelemetryConfig,
   TelemetryData,
   TelemetryExporterType,
   TelemetrySpan,
+  OtelApiExporterOptions,
 } from "./performance/telemetry";
+export type { TelemetryExporter } from "./shared/openTelemetry";
 
 // ─── Smart Cache (#604) ──────────────────────────────────────────────────────
 export {

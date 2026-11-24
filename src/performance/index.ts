@@ -21,12 +21,18 @@ export {
   validateTelemetryConfig,
   resolveOpenTelemetryConfig,
   DatadogHttpTelemetryExporter,
+  traceContractCall,
+  createOtelApiExporter,
+  createOtelApiExporterFromProviders,
+  OtelApiTelemetryExporter,
 } from "./telemetry";
 export type {
   TelemetryConfig,
   TelemetryData,
   TelemetryExporterType,
   TelemetrySpan,
+  OtelApiExporterOptions,
 } from "./telemetry";
+export type { TelemetryExporter } from "../shared/openTelemetry";
 export { createCache, CacheBuilder } from "./cacheStrategy";
 export type { CacheOptions, CachedData, CacheStats, CacheFetcher } from "./cacheStrategy";
